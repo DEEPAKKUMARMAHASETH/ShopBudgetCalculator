@@ -102,11 +102,100 @@ button{
 @media only screen and ( max-width: 1000px){
   .main{
     flex-direction: column;
+    margin-top: 72px;
   }
   .shop-list{
     margin-right: 0;
   }
   .output{
     margin-top: 40px;
+  }
+}
+@media only screen and ( max-width: 1000px){
+  .main{
+    flex-direction: column;
+    margin-top: 72px;
+  }
+  .shop-list{
+    margin-right: 0;
+  }
+  .output{
+    margin-top: 40px;
+  }
+}
+@media only screen and ( max-width: 900px){
+  .main{
+    margin-top: 52px;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+ h2{
+  font-size: 1.2rem;
+ }
+ p{
+  font-size: 1rem;
+ }
+}
+@media only screen and ( max-width: 800px){
+  .main{
+    margin-top: 42px;
+  }
+  h1{
+    font-size: 1.4rem;
+  }
+ h2{
+  font-size: 1.1rem;
+ }
+}
+@media only screen and ( max-width: 700px){
+  h1{
+    font-size: 1.3rem;
+  }
+ h2{
+  font-size: 1rem;
+ }
+
+}
+@media only screen and ( max-width: 600px){
+  h1{
+    font-size: 1.2rem;
+  }
+  .shop-list{
+    width: 50%;
+  }
+  .output{
+    width: 50%;
+  }
+}
+@media only screen and ( max-width: 500px){
+  .main{
+    margin-top: 22px;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  .shop-list{
+    width: 50%;
+  }
+  .output{
+    width: 50%;
+  }
+}
+@media only screen and ( max-width: 500px){
+  .main{
+    margin-top: 22px;
+  }
+  h2{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .shop-list{
+    width: 50%;
+  }
+  .output{
+    width: 50%;
   }
 }
