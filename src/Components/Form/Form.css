@@ -162,10 +162,10 @@ button{
     font-size: 1.2rem;
   }
   .shop-list{
-    width: 50%;
+    width: 80%;
   }
   .output{
-    width: 50%;
+    width: 80%;
   }
 }
 @media only screen and ( max-width: 500px){
@@ -174,12 +174,6 @@ button{
   }
   h1{
     font-size: 1rem;
-  }
-  .shop-list{
-    width: 50%;
-  }
-  .output{
-    width: 50%;
   }
 }
 @media only screen and ( max-width: 500px){
@@ -191,11 +185,5 @@ button{
   }
   p{
     font-size: 12px;
-  }
-  .shop-list{
-    width: 50%;
-  }
-  .output{
-    width: 50%;
   }
 }
