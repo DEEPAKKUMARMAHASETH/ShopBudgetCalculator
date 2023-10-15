@@ -34,7 +34,7 @@ const ClothingForm = () => {
                 <form onSubmit={handleSubmit}>
                     <div className="prodcuts">
                         <div className="input">
-                            <h2>T-shirt</h2>
+                            <h2>T-shirt :- </h2>
                             <input id="tshirt"
                             type="text"
                             placeholder="Enter price"
@@ -43,7 +43,7 @@ const ClothingForm = () => {
                         />
                         </div>
                         <div className="input">
-                            <h2>Jeans</h2>
+                            <h2>Jeans :-</h2>
                             <input  id="jeans"
                             type="text"
                             placeholder="Enter price"
@@ -52,7 +52,7 @@ const ClothingForm = () => {
                         />
                         </div>
                         <div className="input">
-                            <h2>Jackets</h2>
+                            <h2>Jackets :-</h2>
                             <input  id="jackets"
                             type="text"
                             placeholder="Enter price"
@@ -62,7 +62,7 @@ const ClothingForm = () => {
                         </div>
                     </div>
                     <div className="input">
-                        <h1>Enter your Budget</h1>
+                        <h1>Enter your Budget :-</h1>
                         <input
                             type="text"
                             id="budget"
