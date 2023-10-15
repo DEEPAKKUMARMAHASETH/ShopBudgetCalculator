@@ -3,14 +3,15 @@ import './Form.css';
 const ClothingForm = () => {
     const [budget, setBudget] = useState("");
     const [combinations, setCombinations] = useState([]);
+    const [tshirtPrice, setTshirtPrice] = useState([]);
+    const [jeansPrice, setJeansPrice] = useState([]);
+    const [jacketPrice, setJacketsPrice] = useState([]);
     const handleSubmit = (event) => {
         event.preventDefault();
         generateCombinations();
     };
     const generateCombinations = () => {
-        const tshirtPrice = 50.00;
-        const jeansPrice = 80.00;
-        const jacketPrice = 100.00;
+        const minPrice = Math.min(tshirtPrice, Math.min(jeansPrice, jacketPrice));
         const comb = [];
         for (let tshirts = 1; tshirts * tshirtPrice <= budget; tshirts++) {
             for (let jeans = 1; jeans * jeansPrice <= budget - tshirts * tshirtPrice; jeans++) {
@@ -18,7 +19,7 @@ const ClothingForm = () => {
                 if (remainingBudget >= jacketPrice) {
                     let jackets = Math.floor(remainingBudget / jacketPrice);
                     let totalPrice = (tshirts * tshirtPrice + jeans * jeansPrice + jackets * jacketPrice);
-                    if (budget - totalPrice < 50) {
+                    if (budget - totalPrice < minPrice) {
                         comb.push({ tshirts, jeans, jackets, leftovermoney: budget - totalPrice, totalPrice });
                     }
                 }
@@ -32,17 +33,32 @@ const ClothingForm = () => {
             <div className="shop-list">
                 <form onSubmit={handleSubmit}>
                     <div className="prodcuts">
-                        <div>
+                        <div className="input">
                             <h2>T-shirt</h2>
-                            <p>Price :- 50</p>
+                            <input id="tshirt"
+                            type="text"
+                            placeholder="Enter price"
+                            value={tshirtPrice}
+                            onChange={(e) => setTshirtPrice(e.target.value)}
+                        />
                         </div>
-                        <div>
+                        <div className="input">
                             <h2>Jeans</h2>
-                            <p>Price :- 80</p>
+                            <input  id="jeans"
+                            type="text"
+                            placeholder="Enter price"
+                            value={jeansPrice}
+                            onChange={(e) => setJeansPrice(e.target.value)}
+                        />
                         </div>
-                        <div>
+                        <div className="input">
                             <h2>Jackets</h2>
-                            <p>Price :- 100</p>
+                            <input  id="jackets"
+                            type="text"
+                            placeholder="Enter price"
+                            value={jacketPrice}
+                            onChange={(e) => setJacketsPrice(e.target.value)}
+                        />
                         </div>
                     </div>
                     <div className="input">

@@ -20,7 +20,7 @@ button{
 }
 .shop-list{
   width: 40%;
-  height: 400px;
+  /* height: 400px; */
   background-color: aliceblue;
   border: 1px solid black;
   padding: 30px;
@@ -37,6 +37,7 @@ button{
 .prodcuts{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
 }
 .input{
@@ -81,6 +82,7 @@ button{
   padding: 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 20px;
 
 }
 .scrollable-div{
