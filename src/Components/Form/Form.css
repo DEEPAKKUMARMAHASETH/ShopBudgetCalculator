@@ -182,6 +182,9 @@ button{
   }
 }
 @media only screen and ( max-width: 500px){
+  .input input{
+    width: 150px;
+  }
   .main{
     margin-top: 22px;
   }
